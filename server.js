@@ -1,5 +1,4 @@
-var json = require('./client/data.json'),
-    towns = require('./client/data.json'),
+var towns = require('./client/data.json'),
     http = require("http"),
     url = require("url"),
     path = require("path"),
@@ -78,20 +77,20 @@ http.createServer(function (request, response) {
         });
     }
 
-    function updateTown() {
-        towns.forEach(function (town, i) {
-            if (town.id === id) {
-                towns[i] = JSON.parse(body);
-            }
-        });
-    }
-
     function deleteTown() {
         towns.forEach(function (town, i) {
             if (town.id === id) {
                 towns.splice(i, 1);
             }
         })
+    }
+
+    function updateTown() {
+        towns.forEach(function (town, i) {
+            if (town.id === id) {
+                towns[i] = JSON.parse(body);
+            }
+        });
     }
 }).
     listen(3000);
