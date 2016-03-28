@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Tahoma", sans-serif;
+}
+
+.panel {
+    margin: 15px;
+    padding: 15px;
+    min-width: 150px;
+    max-width: 500px;
+    min-height: 150px;
+}
+
+.panel >div {
+    margin: 10px;
+    padding: 10px;
+    background-color: #c1e2b3;
+}
+
+.panel div:hover {
+    color: indigo;
+    cursor: pointer;
+}
+
+input {
+    width: 100px;
+    margin: -5px;
+    margin-left: 20px;
+}
+
+.menu  {
+    display: inline-block;
+    margin-top: 5px;
+    max-width: 30px;
+    background-color: azure;
+}
+
+.menu > div:hover {
+    color: darkblue;
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+.addBtn {
+    margin-left: 40%;
+}

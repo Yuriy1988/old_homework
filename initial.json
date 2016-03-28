@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Dnepropetrovsk",
+    "groups": 5,
+    "teachers": 3,
+    "id": 1
+  },
+  {
+    "name": "Kyev",
+    "groups": 2,
+    "teachers": 1,
+    "id": 2
+  },
+  {
+    "name": "Lviv",
+    "groups": 12,
+    "teachers": 9,
+    "id": 3
+  },
+  {
+    "name": "Ivano-Frankovsk",
+    "groups": 3,
+    "teachers": 2,
+    "id": 4
+  },
+  {
+    "name": "Chernovci",
+    "groups": 2,
+    "teachers": 2,
+    "id": 5
+  },
+  {
+    "name": "Rovno",
+    "groups": 1,
+    "teachers": 1,
+    "id": 6
+  }
+]
