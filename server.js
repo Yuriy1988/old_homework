@@ -1,4 +1,6 @@
 var towns = require('./client/data.json'),
+    MongoClient = require('mongodb').MongoClient,
+    assert = require('assert'),
     http = require("http"),
     url = require("url"),
     path = require("path"),

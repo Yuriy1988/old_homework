@@ -8,9 +8,9 @@ var TownListView = Backbone.View.extend({
 
     initialize: function () {
         var townsList = new TownsList;
-        this.collection =  townsList;
+        this.collection = townsList;
         townsList.fetch();
-
+        console.log(townsList)
         this.listenTo(this.collection, 'add', this.renderOne, this);
         _.bindAll(this, 'add');
     },

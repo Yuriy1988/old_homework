@@ -4,9 +4,15 @@ var TownView = Backbone.View.extend({
     template: _.template(tpl.town),
 
     events: {
+        'click': 'test',
         'contextmenu': 'initMenu',
         'click .delete': 'delete',
         'click .update': 'updateInit'
+    },
+
+    test: function(e) {
+        console.log(e);
+        //e.stopPropagation();
     },
 
     initialize: function() {
@@ -17,10 +23,12 @@ var TownView = Backbone.View.extend({
 
     render: function () {
         this.$el.html(this.template(this.model.toJSON()));
+
         return this;
     },
 
     initMenu: function () {
+
         event.preventDefault();
         $('.menu').remove();
         this.$el.append(tpl.menu);

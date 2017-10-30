@@ -6,3 +6,5 @@ var Town = Backbone.Model.extend({
     },
     urlRoot:'/data.json'
 });
+
+

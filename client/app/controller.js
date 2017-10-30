@@ -2,7 +2,6 @@ var m = new Mediator(),
 
     Controller = (function () {
         function Controller() {
-
             var townListView = new TownListView(),
                 createEdit = new CreateEdit();
 
@@ -16,5 +15,7 @@ var m = new Mediator(),
         }
 
         return Controller;
+
+
     })();
 
